@@ -1,5 +1,18 @@
+# ZMK
 build/
-zmk/
-modules/
-tools/
-.west/
+zephyr/
+west.yml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
