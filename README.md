@@ -18,7 +18,6 @@
 ## Сборка прошивки
 
 Требования:
-- Docker
 - west
 - zmk-dev-container
 
