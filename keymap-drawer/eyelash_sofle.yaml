@@ -63,7 +63,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - DIGITS
-  - '&RIGHT_ALT'
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:backspace-reverse-outline$$
   SYMBOLS:
   - F11
