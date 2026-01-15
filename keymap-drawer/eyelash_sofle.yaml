@@ -63,7 +63,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - DIGITS
-  - $$mdi:apple-keyboard-option$$
+  - '&ht_layer3'
   - $$mdi:backspace-reverse-outline$$
   SYMBOLS:
   - F11
