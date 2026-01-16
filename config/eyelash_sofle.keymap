@@ -90,7 +90,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <layer1_rgb>, <&kp ENTER>;
+            bindings = <&layer1_rgb>, <&kp ENTER>;
             display-name = "Layer-Tap";
         };
         lt_tab_2: lt_tab_2 {
@@ -98,7 +98,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <layer2_rgb>, <&kp ENTER>;
+            bindings = <&layer2_rgb>, <&kp ENTER>;
             display-name = "Layer-Tap";
         };
         lt_tab: lt_tab {
