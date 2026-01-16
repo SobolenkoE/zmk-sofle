@@ -15,53 +15,53 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
-  - {t: Q, h: Sft+Q}
-  - {t: W, h: Sft+W}
-  - {t: E, h: Sft+E}
-  - {t: R, h: Sft+R}
-  - {t: T, h: Sft+T}
+  - Q
+  - W
+  - E
+  - R
+  - T
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: Y, h: Sft+Y}
-  - {t: U, h: Sft+U}
-  - {t: I, h: Sft+I}
-  - {t: O, h: Sft+O}
-  - {t: P, h: Sft+P}
-  - {t: '-', h: Sft+-, s: _}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: Sft+A}
-  - {t: S, h: Sft+S}
-  - {t: D, h: Sft+D}
-  - {t: F, h: Sft+F}
-  - {t: G, h: Sft+G}
+  - A
+  - S
+  - D
+  - F
+  - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: H, h: Sft+H}
-  - {t: J, h: Sft+J}
-  - {t: K, h: Sft+K}
-  - {t: L, h: Sft+L}
-  - {t: ;, h: Sft+;, s: ':'}
-  - {t: '''', h: Sft+', s: '"'}
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - '&apos_tap'
   - $$mdi:apple-keyboard-shift$$
-  - {t: Z, h: Sft+Z}
-  - {t: X, h: Sft+X}
-  - {t: C, h: Sft+C}
-  - {t: V, h: Sft+V}
-  - {t: B, h: Sft+B}
+  - Z
+  - X
+  - C
+  - V
+  - B
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: N, h: Sft+N}
-  - {t: M, h: Sft+M}
-  - {t: ',', h: 'Sft+,', s: <}
-  - {t: ., h: Sft+., s: '>'}
-  - {t: /, h: Sft+/, s: '?'}
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', h: '&layer1_rgb'}
+  - {t: '$$mdi:keyboard-return$$', h: MOVE}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: '&layer2_rgb'}
+  - {t: '$$mdi:keyboard-return$$', h: DIGITS}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -191,7 +191,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
