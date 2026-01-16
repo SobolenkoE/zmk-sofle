@@ -116,8 +116,8 @@
         layer_2 {
             bindings = <
 &kp F11    &kp F1          &kp F2          &kp F3        &kp F4        &kp F5          &mmv MOVE_UP     &kp F6    &kp F7     &kp F8      &kp F9     &kp F10      &trans
-&trans     &kp EXCLAMATION &kp AT_SIGN     &kp HASH      &kp DOLLAR    &kp CARET       &mmv MOVE_DOWN   &kp AMPS  &kp ASTRK  &kp LPAR    &kp RPAR   &kp MINUS    &kp EQUAL
-&trans     AS(N1)          AS(N2)          AS(N3)        AS(N4)        AS(N5)          &mmv MOVE_LEFT   AS(N6)    AS(N7)     AS(N8)      AS(N9)     AS(N0)       &kp UNDER
+&trans     &kp EXCLAMATION &kp AT_SIGN     &kp HASH      &kp DOLLAR    &kp CARET       &mmv MOVE_DOWN   &kp CARET &kp AMPS  &kp ASTRK  &kp LPAR    &kp RPAR   &kp MINUS
+&trans     AS(N1)          AS(N2)          AS(N3)        AS(N4)        AS(N5)          &mmv MOVE_LEFT   AS(N6)    AS(N7)     AS(N8)      AS(N9)     AS(N0)       &kp EQUAL
 &trans     &kp PIPE        &kp GRAVE       &kp QUESTION  &kp LBKT      &kp LBRC        &mmv MOVE_RIGHT  &kp RBRC  &kp RBKT   &kp COMMA   &kp DOT    &kp SLASH    &trans
 &trans     &trans          &trans          &trans        &trans        &trans          &mkp LCLK        &trans    &trans     &trans      &trans     &trans
             >;
