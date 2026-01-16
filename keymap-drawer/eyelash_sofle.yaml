@@ -14,19 +14,19 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-tab-reverse$$'}
+  - {t: Q, h: Sft+Q}
+  - {t: W, h: Sft+W}
+  - {t: E, h: Sft+E}
+  - {t: R, h: Sft+R}
+  - {t: T, h: Sft+T}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - _
+  - {t: Y, h: Sft+Y}
+  - {t: U, h: Sft+U}
+  - {t: I, h: Sft+I}
+  - {t: O, h: Sft+O}
+  - {t: P, h: Sft+P}
+  - {t: '-', h: Sft+-, s: _}
   - $$mdi:apple-keyboard-caps$$
   - {t: A, h: Sft+A}
   - {t: S, h: Sft+S}
