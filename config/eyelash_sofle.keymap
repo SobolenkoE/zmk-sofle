@@ -87,7 +87,7 @@
     behaviors {
         lt_tab_1: lt_tab_1 {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&layer1_rgb>, <&kp>;
@@ -95,7 +95,7 @@
         };
         lt_tab_2: lt_tab_2 {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&layer2_rgb>, <&kp>;
@@ -138,7 +138,7 @@
 &kp TAB     AS(Q)      AS(W)         AS(E)         AS(R)   AS(T)          &mmv MOVE_DOWN   AS(Y)      AS(U)      AS(I)          AS(O)            AS(P)       AS(MINUS)
 &kp CAPS    AS(A)      AS(S)         AS(D)         AS(F)   AS(G)          &mmv MOVE_LEFT   AS(H)      AS(J)      AS(K)          AS(L)            AS(SEMI)    AS(APOS)
 &kp LSHFT   AS(Z)      AS(X)         AS(C)         AS(V)   AS(B)          &mmv MOVE_RIGHT  AS(N)      AS(M)      AS(COMMA)      AS(DOT)          AS(FSLH)    &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt_tab_1 ENTER      &kp SPACE        &mkp LCLK  &kp SPACE  &lt_tab_2 ENTER  &kp RIGHT_ALT  &kp LEFT_GUI &kp RCTRL
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt_tab_1 0 ENTER      &kp SPACE        &mkp LCLK  &kp SPACE  &lt_tab_2 0 ENTER  &kp RIGHT_ALT  &kp LEFT_GUI &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
