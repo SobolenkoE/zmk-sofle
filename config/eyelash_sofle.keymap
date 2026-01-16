@@ -54,53 +54,8 @@
             label = "SHIFT_MCLK";
         };
 
-        layer1_rgb: layer1_rgb {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_BRD>,
-                <&rgb_ug RGB_BRD>,
-                <&rgb_ug RGB_BRD>,
-                <&rgb_ug RGB_BRD>,
-                <&rgb_ug RGB_EFF>,
-                <&mo 1>;
-
-            label = "LAYER1_RGB";
-        };
-
-        layer2_rgb: layer2_rgb {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&rgb_ug RGB_ON>,
-                <&rgb_ug RGB_BRD>,
-                <&rgb_ug RGB_BRD>,
-                <&rgb_ug RGB_BRD>,
-                <&rgb_ug RGB_BRD>,
-                <&rgb_ug RGB_EFR>,
-                <&mo 2>;
-
-            label = "LAYER2_RGB";
-        };
     };
     behaviors {
-        lt_tab_1: lt_tab_1 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&layer1_rgb>, <&kp>;
-            display-name = "Layer-Tap";
-        };
-        lt_tab_2: lt_tab_2 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&layer2_rgb>, <&kp>;
-            display-name = "Layer-Tap";
-        };
         lt_tab: lt_tab {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -117,8 +72,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        apos_tap: apos_tap {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp APOS>, <&kp LBKT>, <&kp RBKT>;
+        };
     };
-
     combos {
         compatible = "zmk,combos";
 
@@ -135,10 +95,10 @@
         layer0 {
             bindings = <
 &kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &lt_tab 3 N5   &mmv MOVE_UP     &kp N6     &kp N7     &kp N8         &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB     AS(Q)      AS(W)         AS(E)         AS(R)   AS(T)          &mmv MOVE_DOWN   AS(Y)      AS(U)      AS(I)          AS(O)            AS(P)       AS(MINUS)
-&kp CAPS    AS(A)      AS(S)         AS(D)         AS(F)   AS(G)          &mmv MOVE_LEFT   AS(H)      AS(J)      AS(K)          AS(L)            AS(SEMI)    AS(APOS)
-&kp LSHFT   AS(Z)      AS(X)         AS(C)         AS(V)   AS(B)          &mmv MOVE_RIGHT  AS(N)      AS(M)      AS(COMMA)      AS(DOT)          AS(FSLH)    &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt_tab_1 0 ENTER      &kp SPACE        &mkp LCLK  &kp SPACE  &lt_tab_2 0 ENTER  &kp RIGHT_ALT  &kp LEFT_GUI &kp RCTRL
+&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T          &mmv MOVE_DOWN   &kp Y      &kp U      &kp I          &kp O            &kp P       &kp MINUS
+&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G          &mmv MOVE_LEFT   &kp H      &kp J      &kp K          &kp L            &kp SEMI    &apos_tap
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B          &mmv MOVE_RIGHT  &kp N      &kp M      &kp COMMA      &kp DOT          &kp FSLH    &kp RIGHT_SHIFT
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt_tab 1 ENTER      &kp SPACE        &mkp LCLK  &kp SPACE  &lt_tab 2 ENTER  &kp RIGHT_ALT  &kp LEFT_GUI &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
