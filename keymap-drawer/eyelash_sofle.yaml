@@ -57,11 +57,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - '&lt_tab_1 ENTER'
+  - {t: '$$mdi:keyboard-return$$', h: '&layer1_rgb'}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-space$$
-  - '&lt_tab_2 ENTER'
+  - {t: '$$mdi:keyboard-return$$', h: '&layer2_rgb'}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
