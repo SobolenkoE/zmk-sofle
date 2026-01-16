@@ -40,22 +40,6 @@
     };
 
     behaviors {
-        lt_tab_1: lt_tab_1 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <layer1_rgb>, <&kp ENTER>;
-            display-name = "Layer-Tap";
-        };
-        lt_tab_2: lt_tab_2 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <layer2_rgb>, <&kp ENTER>;
-            display-name = "Layer-Tap";
-        };
         lt_tab: lt_tab {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -65,12 +49,140 @@
             display-name = "Layer-Tap";
         };
         as: auto_shift {
+        lt_layer1: lt_layer1 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            quick_tap_ms = <0>;
             flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer1_rgb>, <&kp>;
+            display-name = "Layer1-Tap";
+        };
+        lt_layer2: lt_layer2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer2_rgb>, <&kp>;
+            display-name = "Layer2-Tap";
+        };
+            compatible = "zmk,behavior-hold-tap";
+        lt_layer1: lt_layer1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer1_rgb>, <&kp>;
+            display-name = "Layer1-Tap";
+        };
+        lt_layer2: lt_layer2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer2_rgb>, <&kp>;
+            display-name = "Layer2-Tap";
+        };
+            #binding-cells = <2>;
+        lt_layer1: lt_layer1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer1_rgb>, <&kp>;
+            display-name = "Layer1-Tap";
+        };
+        lt_layer2: lt_layer2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer2_rgb>, <&kp>;
+            display-name = "Layer2-Tap";
+        };
+            tapping_term_ms = <200>;
+        lt_layer1: lt_layer1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer1_rgb>, <&kp>;
+            display-name = "Layer1-Tap";
+        };
+        lt_layer2: lt_layer2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer2_rgb>, <&kp>;
+            display-name = "Layer2-Tap";
+        };
+            quick_tap_ms = <0>;
+        lt_layer1: lt_layer1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer1_rgb>, <&kp>;
+            display-name = "Layer1-Tap";
+        };
+        lt_layer2: lt_layer2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer2_rgb>, <&kp>;
+            display-name = "Layer2-Tap";
+        };
+            flavor = "tap-preferred";
+        lt_layer1: lt_layer1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer1_rgb>, <&kp>;
+            display-name = "Layer1-Tap";
+        };
+        lt_layer2: lt_layer2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer2_rgb>, <&kp>;
+            display-name = "Layer2-Tap";
+        };
             bindings = <&kp>, <&kp>;
+        lt_layer1: lt_layer1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer1_rgb>, <&kp>;
+            display-name = "Layer1-Tap";
+        };
+        lt_layer2: lt_layer2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer2_rgb>, <&kp>;
+            display-name = "Layer2-Tap";
+        };
+        };
+        lt_layer1: lt_layer1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer1_rgb>, <&kp>;
+            display-name = "Layer1-Tap";
+        };
+        lt_layer2: lt_layer2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&layer2_rgb>, <&kp>;
+            display-name = "Layer2-Tap";
         };
     };
 
@@ -139,7 +251,7 @@
 &kp TAB     AS(Q)      AS(W)         AS(E)         AS(R)   AS(T)          &mmv MOVE_DOWN   AS(Y)      AS(U)      AS(I)          AS(O)            AS(P)       AS(MINUS)
 &kp CAPS    AS(A)      AS(S)         AS(D)         AS(F)   AS(G)          &mmv MOVE_LEFT   AS(H)      AS(J)      AS(K)          AS(L)            AS(SEMI)    AS(APOS)
 &kp LSHFT   AS(Z)      AS(X)         AS(C)         AS(V)   AS(B)          &mmv MOVE_RIGHT  AS(N)      AS(M)      AS(COMMA)      AS(DOT)          AS(FSLH)    &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt_tab_1      &kp SPACE        &mkp LCLK  &kp SPACE  &lt_tab_2  &kp RIGHT_ALT  &kp LEFT_GUI &kp RCTRL
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt_layer1 ENTER      &kp SPACE        &mkp LCLK  &kp SPACE  &lt_layer2 ENTER  &kp RIGHT_ALT  &kp LEFT_GUI &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
