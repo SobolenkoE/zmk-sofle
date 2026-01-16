@@ -38,51 +38,6 @@
 
         tap-ms = <100>;
     };
-
-    behaviors {
-        lt_tab_1: lt_tab_1 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <layer1_rgb>, <&kp ENTER>;
-            display-name = "Layer-Tap";
-        };
-        lt_tab_2: lt_tab_2 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <layer2_rgb>, <&kp ENTER>;
-            display-name = "Layer-Tap";
-        };
-        lt_tab: lt_tab {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&kp>;
-            display-name = "Layer-Tap";
-        };
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 28 40>;
-        };
-    };
-
     macros {
         SHIFT_MCLK: SHIFT_MCLK {
             compatible = "zmk,behavior-macro";
@@ -129,6 +84,50 @@
             label = "LAYER2_RGB";
         };
     };
+    behaviors {
+        lt_tab_1: lt_tab_1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <layer1_rgb>, <&kp ENTER>;
+            display-name = "Layer-Tap";
+        };
+        lt_tab_2: lt_tab_2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <layer2_rgb>, <&kp ENTER>;
+            display-name = "Layer-Tap";
+        };
+        lt_tab: lt_tab {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
+        };
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        softoff {
+            bindings = <&soft_off>;
+            key-positions = <14 28 40>;
+        };
+    };
+
 
     keymap {
         compatible = "zmk,keymap";
