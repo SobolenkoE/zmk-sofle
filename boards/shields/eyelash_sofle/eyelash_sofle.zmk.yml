@@ -1,15 +1,15 @@
 file_format: "1"
 id: eyelash_sofle
 name: Eyelash Sofle
+type: shield
 url: https://github.com/a741725193/zmk-sofle
-type: board
-arch: arm
+requires: [pro_micro]
 features:
   - keys
   - display
-outputs:
-  - usb
-  - ble
+  - underglow
+  - encoder
+  - studio
 siblings:
   - eyelash_sofle_left
   - eyelash_sofle_right

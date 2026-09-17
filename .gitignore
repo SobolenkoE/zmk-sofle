@@ -1,7 +1,6 @@
 # ZMK
 build/
-zephyr/
-west.yml
+.west/
 
 # IDE
 .idea/
