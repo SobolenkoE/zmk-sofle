@@ -66,13 +66,6 @@
             key-positions = <14 28 40>;
         };
     };
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <4>;
-        };
-    };
 
 
     keymap {
@@ -84,7 +77,7 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T          &mmv MOVE_DOWN   &kp Y      &kp U      &kp I          &kp O            &kp P       &kp MINUS
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G          &mmv MOVE_LEFT   &kp H      &kp J      &kp K          &kp L            &kp SEMI    &apos_tap
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B          &mmv MOVE_RIGHT  &kp N      &kp M      &kp COMMA      &kp DOT          &kp FSLH    &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt_tab 1 ENTER      &kp SPACE        &mkp LCLK  &kp SPACE  &lt_tab 2 ENTER  &kp RIGHT_ALT  &kp LEFT_GUI &kp RCTRL
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt_tab 1 ENTER      &kp SPACE        &mkp LCLK  &kp SPACE  &lt_tab 2 ENTER  &mo 4  &kp LEFT_GUI &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -132,11 +125,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             display-name = "MACROS";
