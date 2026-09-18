@@ -1,0 +1,16 @@
+/*
+ * Только для левой половины: отдельный CDC ACM для консоли логов
+ * (чтобы не смешивать со studio-rpc-uart).
+ */
+
+&zephyr_udc0 {
+    cdc_console_uart: cdc_acm_console {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+
+/ {
+    chosen {
+        zephyr,console = &cdc_console_uart;
+    };
+};
