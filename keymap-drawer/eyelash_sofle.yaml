@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '-', s: _}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:keyboard-esc$$', h: Ctl+Sft+0}
   - A
   - S
   - D
