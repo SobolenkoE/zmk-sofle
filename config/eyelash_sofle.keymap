@@ -106,7 +106,7 @@
 &trans      &kp LG(Q)        &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &none            &kp PG_UP        &kp HOME    &kp END    &kp MINUS         &kp EQUAL
 &trans      &kp TILDE        &shot_tap LG(LS(S)) LG(LA(S))  &mmv MOVE_DOWN   &fs_tap LG(F) MOVE_RIGHT  &mkp MB5           &mmv MOVE_LEFT   &kp LEFT         &kp DOWN         &kp UP      &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &none            &none           &shot_tap LG(C) LC(C)  &kp LC(V)  &shot_tap LG(E) LG(R)  &mmv MOVE_RIGHT  &none            &kp PG_DN        &kp END     &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &kp LALT           &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &kp LCTRL          &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "MOVE";
