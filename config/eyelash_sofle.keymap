@@ -9,6 +9,8 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
+&mmv_input_listener { input-processors = <&zip_xy_scaler 3 1>; };
+
 
 &msc {
     acceleration-exponent = <1>;      // 0
