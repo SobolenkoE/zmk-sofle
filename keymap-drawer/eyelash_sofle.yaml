@@ -94,7 +94,7 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
-  - {t: Gui+LALT(S), h: Gui+Sft+S}
+  - {t: Gui+Alt+S, h: Gui+Sft+S}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', h: F, s: '$$mdi:mouse$$'}
   - '&mkp MB5'
