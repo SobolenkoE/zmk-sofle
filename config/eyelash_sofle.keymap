@@ -97,7 +97,7 @@
 &kp F11     &kp LG(N1)       &kp LG(N2)      &kp LG(N3)       &kp LG(N4)       &kp LG(N5)         &mmv MOVE_UP     &kp LG(N6)       &kp LG(N7)       &kp LG(N8)  &kp LG(N9) &kp LG(N0)        &kp F12
 &trans      &kp LG(Q)        &mkp LCLK       &mmv MOVE_UP     &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp HOME         &kp LC(HOME)     &none       &none       &kp MINUS         &kp EQUAL
 &trans      &shot_tap LG(LS(S)) LG(LA(S))  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mkp MB5           &mmv MOVE_LEFT   &kp END          &kp LC(END)      &kp UP      &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &none            &kp LG(S)       &shot_tap LG(C) LC(C)  &shot_tap LG(F) LC(V)  &shot_tap LG(E) LG(R)  &mmv MOVE_RIGHT  &none            &kp PG_DN        &kp END     &kp F11    &kp F12           &trans
+&trans      &none            &kp LG(S)       &shot_tap LG(C) LC(C)  &shot_tap LG(F) LC(V)  &shot_tap LG(E) LG(R)  &mmv MOVE_RIGHT  &none            &kp PG_DN        &kp END     &kp LC(T)  &kp F12           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &kp LCTRL          &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
