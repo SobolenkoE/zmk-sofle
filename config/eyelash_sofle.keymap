@@ -129,7 +129,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &kp ENTER  &none    &none  &none  &none  &none  &none  &none
             >;
 
             display-name = "MACROS";
