@@ -115,7 +115,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PG DN
   - END
-  - F11
+  - Ctl+T
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
