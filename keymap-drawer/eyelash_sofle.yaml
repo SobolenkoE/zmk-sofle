@@ -107,7 +107,7 @@ layers:
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: Ctl+C, h: C}
   - {t: Ctl+V, h: F}
   - {t: Gui+R, h: Gui+E}
