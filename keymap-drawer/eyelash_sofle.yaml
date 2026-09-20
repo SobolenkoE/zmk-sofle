@@ -57,12 +57,12 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', h: MOVE}
+  - {t: Gui+F1, h: MOVE}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: DIGITS}
-  - MACROS
+  - {t: Gui+Sft+F1, h: MACROS}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
   MOVE:
