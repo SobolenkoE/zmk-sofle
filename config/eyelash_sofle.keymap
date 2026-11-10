@@ -1,8 +1,7 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 720
 
-// Скорость колеса мыши на энкодере (тиков на оборот: 20 × SCRL_VAL).
-// Дефолт 10 — слишком быстро, уменьшено вдвое.
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 5
+// Скорость колеса на энкодере задаётся параметром &enc_wheel в scroll_encoder
+// (шагов за тик; 20 тиков на оборот). &msc здесь больше не используется.
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -36,11 +35,15 @@
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        bindings = <&enc_wheel (-5)>, <&enc_wheel 5>;
 
         tap-ms = <100>;
     };
     behaviors {
+        enc_wheel: enc_wheel {
+            compatible = "zmk,behavior-enc-wheel";
+            #binding-cells = <1>;
+        };
         lt_tab: lt_tab {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

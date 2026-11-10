@@ -1,0 +1,6 @@
+# Пользовательские behaviors (подхватываются как ZMK_EXTRA_MODULES)
+
+config ZMK_BEHAVIOR_ENC_WHEEL
+	bool "Encoder wheel scroll behavior"
+	default y if DT_HAS_ZMK_BEHAVIOR_ENC_WHEEL_ENABLED
+	depends on ZMK_POINTING

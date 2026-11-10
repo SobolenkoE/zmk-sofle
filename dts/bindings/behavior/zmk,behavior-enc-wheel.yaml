@@ -1,0 +1,11 @@
+description: |
+    Мгновенные HID wheel-события для энкодера (обход race в &msc на ZMK main).
+    Параметр: число шагов, отрицательное = вниз.
+
+compatible: "zmk,behavior-enc-wheel"
+
+properties:
+  "#binding-cells":
+    type: int
+    required: true
+    const: 1
