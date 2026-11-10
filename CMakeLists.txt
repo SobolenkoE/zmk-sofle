@@ -1,2 +1,1 @@
-zephyr_library()
-zephyr_library_sources(src/behaviors/enc_wheel.c)
+target_sources(app PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src/behaviors/enc_wheel.c)
