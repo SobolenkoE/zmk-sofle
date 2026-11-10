@@ -127,7 +127,7 @@
             bindings = <
 &kp LS(GRAVE) &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &mmv MOVE_UP &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &trans
 &trans &bt BT_CLR &bt BT_CLR_ALL &trans &trans &trans &mmv MOVE_DOWN &trans &trans &kp F11 &kp F12 &kp MINUS &kp LS(EQUAL)
-&trans &rgb_ug RGB_OFF &rgb_ug RGB_ON &rgb_ug 11 &rgb_ug 12 &rgb_ug RGB_HUE &trans &rgb_ug RGB_BRI &rgb_ug RGB_BRD &kp INSERT &kp F11 &kp F12 &trans
+&trans &rgb_ug RGB_OFF &rgb_ug RGB_ON &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_SPI &trans &rgb_ug RGB_BRI &rgb_ug RGB_BRD &kp INSERT &kp F11 &kp F12 &trans
 &trans &sys_reset &trans &bootloader &trans &trans &mmv MOVE_RIGHT &trans &trans &sys_reset &soft_off &bootloader &trans
 &bt BT_CLR &out OUT_USB &out OUT_BLE &trans &trans &trans &mkp LCLK &trans &trans &trans &kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET)
             >;
