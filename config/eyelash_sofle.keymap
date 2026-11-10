@@ -1,5 +1,9 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 720
 
+// Скорость колеса мыши на энкодере (тиков на оборот: 20 × SCRL_VAL).
+// Дефолт 10 — слишком быстро, уменьшено вдвое.
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 5
+
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
