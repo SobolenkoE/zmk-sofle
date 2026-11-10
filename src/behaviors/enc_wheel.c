@@ -32,13 +32,17 @@ static int on_keymap_binding_pressed(struct zmk_behavior_binding *binding,
         return ZMK_BEHAVIOR_OPAQUE;
     }
 
-#if IS_ENABLED(CONFIG_ZMK_POINTING)
+/* hid.c/endpoints.c собираются только на центральной половине
+ * ((NOT ZMK_SPLIT) OR ZMK_SPLIT_ROLE_CENTRAL, см. app/CMakeLists.txt).
+ * Энкодер и так физически на центральной — на периферии вызов не случится. */
+#if IS_ENABLED(CONFIG_ZMK_POINTING) &&                                                              \
+    (!IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL))
     LOG_DBG("encoder wheel: %d", steps);
     zmk_hid_mouse_scroll_update(0, steps);
     return zmk_endpoint_send_mouse_report();
 #else
-    return -ENOTSUP;
-#endif /* IS_ENABLED(CONFIG_ZMK_POINTING) */
+    return ZMK_BEHAVIOR_OPAQUE;
+#endif /* CONFIG_ZMK_POINTING && (не split || central) */
 }
 
 static int on_keymap_binding_released(struct zmk_behavior_binding *binding,
