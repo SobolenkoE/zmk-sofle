@@ -38,8 +38,13 @@ static int on_keymap_binding_pressed(struct zmk_behavior_binding *binding,
 #if IS_ENABLED(CONFIG_ZMK_POINTING) &&                                                              \
     (!IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL))
     LOG_DBG("encoder wheel: %d", steps);
-    zmk_hid_mouse_scroll_update(0, steps);
-    return zmk_endpoint_send_mouse_report();
+    // SET + send + сброс: scroll_update накапливает d_scroll_y между
+    // отправками — репорты несли нарастающие значения (−2, −4, −6…),
+    // скролл разгонялся квадратично, реверс «раскручивал» накопленное.
+    zmk_hid_mouse_scroll_set(0, steps);
+    int ret = zmk_endpoint_send_mouse_report();
+    zmk_hid_mouse_scroll_set(0, 0);
+    return ret;
 #else
     return ZMK_BEHAVIOR_OPAQUE;
 #endif /* CONFIG_ZMK_POINTING && (не split || central) */
