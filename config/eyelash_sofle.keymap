@@ -37,7 +37,10 @@
         #sensor-binding-cells = <0>;
         bindings = <&enc_wheel (-5)>, <&enc_wheel 5>;
 
-        tap-ms = <100>;
+        // enc_wheel шлёт колесо мгновенно на press: длинная пауза не нужна.
+        // 100 мс создавали очередь из десятков тиков (val1: -9 пачками) —
+        // отсюда пропуски и запаздывание смены направления.
+        tap-ms = <1>;
     };
     behaviors {
         enc_wheel: enc_wheel {
